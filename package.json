@@ -1,0 +1,29 @@
+{
+  "name": "lou-create-react-app",
+  "version": "1.0.0",
+  "main": "./build/index.js",
+  "preferGlobal": true,
+  "scripts": {
+    "start": "babel-node ./src/index.js",
+    "build": "npm run ./src/index.js",
+    "babelCompile": "babel src --out-dir build --source-maps"
+  },
+  "bin": {
+    "lou-cra": "babel-node ./src/index.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "chalk": "^3.0.0",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^19.0.0"
+  }
+}
